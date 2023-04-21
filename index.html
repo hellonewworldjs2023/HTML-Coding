@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Task_index</title>
+</head>
+<body>
+
+<!-- ヘッダー -->
+    <div class="header">
+        <div class="logo"><a href="#">Cresta Design</a></div>
+
+        <!-- PC画面時のメニュー(スマホ、タブレット画面時非表示) -->
+        <ul class="header-menu">
+            <li class="header-item"><a href="#concept">Concept</a></li>
+            <li class="header-item"><a href="#works">Works</a></li>
+            <li class="header-item"><a href="#service">Service</a></li>
+            <li class="header-item"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- スマホ、タブレット画面時のメニュー(PC画面時非表示) -->
+        <div class="nav-wrapper" id="nav-wrapper">
+            <div class="hamburger" id="js-hamburger">
+                <span class="hamburger-line hamburger-line1"></span>
+                <span class="hamburger-line hamburger-line2"></span>
+                <span class="hamburger-line hamburger-line3"></span>
+            </div>
+            <nav class="sp-nav">
+                <ul>
+                    <li class="hamburger-item"><a href="#concept">Concept</a></li>
+                    <li class="hamburger-item"><a href="#works">Works</a></li>
+                    <li class="hamburger-item"><a href="#service">Service</a></li>
+                    <li class="hamburger-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="black-bg" id="js-black-bg"></div>        
+        </div>
+
+    </div>
+
+<!-- スライダー -->
+    <div class="wrapper">
+
+        <!-- プレビュー、ネクストボタン -->
+        <span id="prev" class="prev"></span>
+        <span id="next" class="next"></span>
+
+        <!-- インジケーター -->
+        <ul class="indicator">
+            <li id="list1"></li>
+            <li id="list2"></li>
+            <li id="list3"></li>
+        </ul>
+
+        <!-- キャッチコピー -->
+        <div class="fv-catch">
+            <h2>Design for Smile.</h2>
+            <h3>快適なオフィスをデザインする</h3>
+        </div>
+
+        <!-- スライダー -->
+        <div id="slider" class="slider slider1">
+            <div class="content content1">     
+            </div>
+            <div class="content content2">    
+            </div>
+            <div class="content content3">   
+            </div>
+        </div>
+
+    </div>
+
+<!-- コンセプト欄 -->
+    <div id="concept" class="concept">
+        <div class="concept-title">
+            <h2>CONCEPT</h2>
+            <img class="line" src="./img/1x/blackLine.png" alt="" width="300" height="50">
+        </div>        
+        <h3>
+            "働きたくなる空間"をデザインすることで<br>
+            人々を幸せにする。
+        </h3>
+        <div class="concept-discription">
+            <p>私たちはオフィスに特化した空間デザインを専門としております。その理由は、
+                「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。
+                そんな思いの株式会社Create Designだからこそできる空間デザインを提供させていただきます。
+            </p>
+            <img src="./img/concept-image@2x.jpg" alt="orz" >
+        </div>
+        <h1>Our Concept</h1>
+
+    </div>
+
+<!-- 「トップへ戻る」ボタン -->
+    
+<a href="#"><button class="back-to-top-btn">トップへ戻る</button></a>
+    
+
+<!-- ワークス欄 -->
+    <div id="works" class="works">
+        <div class="works-title">
+            <h2>Works</h2>
+            <img class="line line-works" src="./img/whiteLine.png" alt="" width="300" height="50">
+        </div>
+        <ul class=" grid grid-col-3">
+            <li class="grid-item">
+                <div class="works-column">
+                    <div class="works-img">
+                        <img src="./img/card-img01@2x.jpg" alt="alt" width="320" height="200">
+                    </div>
+                    <p class="works-description">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="works-column">
+                    <div class="works-img">
+                        <img src="./img/card-img02@2x.jpg" alt="alt" width="320" height="200">
+                    </div>
+                    <p class="works-description">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="works-column">
+                    <div class="works-img">
+                        <img src="./img/card-img03@2x.jpg" alt="alt" width="320" height="200">
+                    </div>
+                    <p class="works-description">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+            </li>
+        </ul>
+        <button class="btn-view-more"> View more</button>
+        <h1>Our Works</h1>
+
+    </div>
+
+<!-- サービス欄 -->
+    <div id="service" class="service">
+        <div class="service-title">
+            <h2>Service</h2>
+            <img class="line" src="./img/1x/blackLine.png" alt="" width="300" height="50">
+        </div>
+        <div class="service-select">
+            <div class="hearing service-cascade">
+                <h3>Hearing</h3>
+            </div>
+            <div class="planning service-cascade">
+                <h3>Planning</h3>
+            </div>
+            <div class="direction service-cascade">
+                <h3>Direction</h3>
+            </div>
+        </div>
+        <h1>Our Service</h1>
+    </div>
+
+<!-- コンタクト欄 -->
+    <div id="contact" class="contact">
+        <div class="contact-title">
+            <h2>Contact</h2>
+            <img class="line" src="./img/whiteLine.png" alt="" width="300" height="50">
+        </div>
+        <p>お気軽にご相談ください。</p>
+        <a href="./contact.html">
+            <button class="contact-btn">
+                Contact
+            </button>
+        </a>
+        <h1>Contact us</h1>   
+    </div>
+
+<!-- フッター     -->
+    <div class="footer">
+        <p>©cresta.design all rights reserved</p>
+    </div>
+
+<!-- スクリプト -->
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+    <script src="scroll.js"></script>
+
+</body>
+</html>
