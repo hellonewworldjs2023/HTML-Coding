@@ -1,0 +1,306 @@
+/* 共通 */
+body{
+    background-color: #fff;
+    font-family:"Noto Serif","Noto Serif JP","メイリオ" ;
+    width: 100%;
+    height:1340px;
+    margin:0 auto; 
+    text-align: center;
+    position: relative;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+/* ヘッダー */
+.header{
+    display: flex;
+    padding:30px;
+    justify-content: space-between;
+    color: #fff;
+    z-index: 20;    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+}
+.header-menu{
+    display:flex;
+}
+.header-item{
+    margin: 0 10px;
+    list-style:none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold; 
+}
+.header-item a,a:visited{
+    color: #fff;  
+}
+.nav-wrapper{
+    display:none
+}
+
+/* タイトル部分 */
+.page-title{
+    width: 100%;
+    height: 453px;
+    background-image: url("./img/contact-page-bgi@2x.jpg");
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 1;   
+}
+.page-title h2{
+    color:#fff;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;    
+    margin: 135px auto;
+    bottom:185px;
+    z-index: 2;
+}
+.page-title h1{
+    color:rgba(255, 255, 255, 0.05);
+    font-size: 90px;
+    font-weight: bold;
+    position:absolute;
+    left:40px;
+    bottom:48px;
+    margin: 0;
+    z-index: 2;
+}
+
+/* フォーム欄 */
+.form{
+    width:700px;
+    height: 632px;
+    margin: 97px auto 80px auto;
+    text-align: left;
+    position: relative;
+}
+.form label{
+    font-size: 16px;    
+}
+/* .checkbox{} */
+.contact-item{
+    margin-top: 22px;;
+}
+.input{
+    min-width: 700px;
+}
+.textarea{
+    min-width: 700px;
+    min-height: 195px;
+}
+.button-submit{
+    width:235px;
+    height: 59px;
+    background-color: #F7D43F;
+    border-radius: 100px;
+    border: none;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow: 0px 10px #1B1310;
+}
+.button-submit:hover{
+    box-shadow: 0px 0px #1B1310;
+    cursor: pointer;
+    transform:translateY(10px);
+    transition: 0.2s;
+}
+
+/* カウントダウンタイマー */
+.count-down{
+    width:324px;
+    height:110px;
+    font-family: "メイリオ";
+    text-align: left;
+    background-color: #FCF6CB;
+    position: absolute;
+    left:70%;
+    bottom:78px;
+    transform: translate(-50%,0);
+    margin:0;
+    padding:10px 30px 26px 20px;
+}
+.count-down h2{
+    font-size:30px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.count-down h3{
+    font-size:24px;
+    font-weight: normal;
+    margin:0;
+}
+
+/* フッター */
+.footer{
+    color:#fff;
+    background-color: #282F35;
+    font-style: italic;
+    margin: 80px 0 0 0;
+    text-align: center;
+    padding:30px 0 30px 0;
+}
+
+
+/* レスポンシブ対応 */
+@media(max-width: 1550px) {
+    .count-down{
+        display:none;
+    }
+}
+@media(max-width:1208px){
+    .headedr{
+        padding-right: 0; 
+    }
+}
+@media(max-width:768px){
+    /* ヘッダー部分 */
+    .header{
+        width: 98%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo{
+        margin-left: 15px;
+    }
+    .header-item{
+        display: none;
+    }
+    .nav-wrapper{
+        display:block;
+    }
+    .hamburger{
+        position:absolute;
+        right: 30px;
+        top: 28px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 300;  
+    }
+    .hamburger-line{
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+    .hamburger-line1{
+        top:5px;
+    }
+    .hamburger-line2{
+        top:16px;
+    }
+    .hamburger-line3{
+        top:28px;
+    }
+    .open .hamburger-line1 {
+        transform: rotate(-45deg);
+        top: 15px;
+    }
+    .open .hamburger-line2{
+        opacity: 0;
+    }
+    .open .hamburger-line3 {
+        transform: rotate(45deg);
+        top: 15px;
+    }
+    .sp-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100%;
+        top:0;
+        width:100%;
+        height:70vh;
+        background-color: #282F35;
+        transition: all 0.5s;
+        z-index: 200;
+        overflow-y:auto ;
+    }
+    .sp-nav a,a:visited{
+        color: #fff;
+    }
+    .open .sp-nav {
+        right: 0;
+    }
+    .hamburger-item{
+        list-style: none;
+        margin: 30px auto;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .black-bg{
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100vw;
+        height:100vh;
+        z-index: 5;
+        background-color: #ededed;
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.5s;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .open .black-bg {
+        opacity: 0.3;
+        visibility: visible;
+    }
+
+    /* タイトル部分 */
+    .page-title{
+        background-position: center;
+    }
+    .page-title h2{
+        font-size: 30px;
+    }
+    .page-title h1{
+        font-size: 40px;
+    }
+
+    /* フォーム欄 */
+    .form{        
+        width: 100%;
+        max-width: 345px;
+        text-align: left;
+        margin:97px auto 0 auto;
+    }
+    .contact-item{
+        display: inline-block;
+        text-align: left;    
+    }
+    .checkbox label{
+        display: block;
+    }
+    .input{
+        min-width: 345px;
+    }
+    .textarea{
+        min-width: 345px;
+        min-height: 171px;
+    }
+    .button-submit{
+        margin: 80px auto 80px auto;
+        position: static;
+        justify-content: center;
+    }
+
+    /* フッター */
+    .footer{
+        padding:30px 0 30px 0;
+    }
+}

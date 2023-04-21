@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-contact.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    
+    <div class="page-title">
+
+        <!-- ヘッダー -->
+        <div class="header">
+            <div class="logo">Cresta Design</div>
+            
+            <!-- PC画面時のメニュー(スマホ、タブレット画面時非表示) -->
+            <ul class="header-menu">
+                <li class="header-item"><a href="./index.html#concept">Concept</a></li>
+                <li class="header-item"><a href="./index.html#works">Works</a></li>
+                <li class="header-item"><a href="./index.html#service">Service</a></li>
+                <li class="header-item"><a href="./index.html#contact">Contact</a></li>
+            </ul>
+
+            <!-- スマホ、タブレット画面時のメニュー(PC画面時非表示) -->
+            <div class="nav-wrapper" id="nav-wrapper">
+                <div class="hamburger" id="js-hamburger">
+                    <span class="hamburger-line hamburger-line1"></span>
+                    <span class="hamburger-line hamburger-line2"></span>
+                    <span class="hamburger-line hamburger-line3"></span>
+                </div>
+                <nav class="sp-nav">
+                    <ul>
+                        <li class="hamburger-item"><a href="./index.html#concept">Concept</a></li>
+                        <li class="hamburger-item"><a href="./index.html#works">Works</a></li>
+                        <li class="hamburger-item"><a href="./index.html#service">Service</a></li>
+                        <li class="hamburger-item"><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="black-bg" id="js-black-bg"></div>
+            </div>
+
+        </div>
+        <h2>Contact</h2>
+        <h1>Contact us</h1>
+    </div>
+
+    <!-- フォーム欄 -->
+    <div class="form">
+        <div class="contact-item">
+            <label for="inqury">お問い合わせ内容</label><br>
+            <div class="checkbox">
+                <label><input type="checkbox" name="inqury" value="doc">資料請求</label>
+                <label><input type="checkbox" name="inqury" value="cons">お電話でのご相談を希望</label>
+                <label><input type="checkbox" name="inqury" value="appli">申し込み</label>
+            </div>
+        </div>
+        <div class="contact-item">
+            <label for="name">担当者名</label><br>
+            <input class="input" type="text" id="name"><br>
+        </div>
+        <div class="contact-item">
+            <label for="tel">電話番号</label><br>
+            <input class="input" type="text" id="tel"><br>
+        </div>
+        <div class="contact-item">
+            <label for="email">メールアドレス</label><br>
+            <input class="input" type="text" id="email"><br>
+        </div>
+        <div class="contact-item">
+            <label for="other">その他</label><br>
+            <textarea class="textarea" id="other" cols="30" rows="10"></textarea>
+        </div>    
+    </div>
+    <button class="button-submit">Submit</button>
+
+    <!-- カウントダウンタイマー -->
+    <div class="count-down">
+        <h3><span id="goal-year"></span>年<span id="goal-month"></span>月<span id="goal-day"></span>日まであと</h3>
+        <h2><span id="rem-day"></span>日<span id="rem-hour"></span>時間<span id="rem-min"></span>分<span id="rem-sec"></span>秒</h2>
+    </div>
+
+    <!-- フッター -->
+    <div class="footer">
+        <p>©cresta.design all rights reserved</p>
+    </div>
+
+    <!-- スクリプト -->   
+    <script src="hamburger.js"></script>
+    <script src="countDown.js"></script>
+</body>
+</html>
